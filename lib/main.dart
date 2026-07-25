@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:islamic_c19_online/modules/layout/screens/layout_screen.dart';
 import 'package:islamic_c19_online/modules/splash/screens/splash_screen.dart';
 
+import 'modules/intro/screens/intro_screen.dart';
 import 'modules/quran_details/screens/quran_details_screen.dart';
 
 void main() {
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       initialRoute: SplashScreen.routeName,
       routes: {
         SplashScreen.routeName : (_)=> SplashScreen(),
+        IntroScreen.routeName: (_) => const IntroScreen(),
         LayoutScreen.routeName : (_) => LayoutScreen(),
         QuranDetailsScreen.routeName : (_) => QuranDetailsScreen()
       },
