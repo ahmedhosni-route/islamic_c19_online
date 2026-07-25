@@ -67,6 +67,11 @@ flutter:
      - assets/images/
      - assets/suras/
      - assets/hadeeth/
+
+  fonts:
+    - family: Janna LT
+      fonts:
+        - asset: assets/fonts/alfont_com_Janna-LT-Bold.ttf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
