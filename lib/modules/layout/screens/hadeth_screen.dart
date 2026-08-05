@@ -96,11 +96,18 @@ class _HadethScreenState extends State<HadethScreen> {
                                   ],
                                 ),
 
-                                Text(
-                                  i.body,
-                                  style: TextStyle(fontSize: 16),
-                                  textAlign: TextAlign.center,
-                                  textDirection: TextDirection.ltr,
+                                // النص بقى جوه Expanded + ScrollView عشان
+                                // لو الحديث طويل يعمل scroll جوه الكارد
+                                // بدل ما يفيض بره الكارد ويسبب Overflow.
+                                Expanded(
+                                  child: SingleChildScrollView(
+                                    child: Text(
+                                      i.body,
+                                      style: TextStyle(fontSize: 16),
+                                      textAlign: TextAlign.center,
+                                      textDirection: TextDirection.ltr,
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
