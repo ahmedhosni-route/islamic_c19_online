@@ -27,7 +27,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: screens[index],
+      body: IndexedStack(index: index, children: screens),
       backgroundColor: AppColors.backgroundColor,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,

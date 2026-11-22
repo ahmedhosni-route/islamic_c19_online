@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islamic_c19_online/modules/layout/screens/layout_screen.dart';
+import 'package:islamic_c19_online/modules/onboarding/screens/onboarding_screen.dart';
 import 'package:islamic_c19_online/modules/splash/screens/splash_screen.dart';
 
 import 'modules/quran_details/screens/quran_details_screen.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       initialRoute: SplashScreen.routeName,
       routes: {
         SplashScreen.routeName : (_)=> SplashScreen(),
+        OnboardingScreen.routeName : (_) => OnboardingScreen(),
         LayoutScreen.routeName : (_) => LayoutScreen(),
         QuranDetailsScreen.routeName : (_) => QuranDetailsScreen()
       },
